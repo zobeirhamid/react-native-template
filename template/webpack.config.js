@@ -47,6 +47,7 @@ module.exports = {
     extensions: ['.web.tsx', '.tsx', '.web.ts', '.ts', '.web.js', '.js'],
     alias: {
       'react-native$': 'react-native-web',
+      '@storybook/react-native': '@storybook/react',
     },
   },
 

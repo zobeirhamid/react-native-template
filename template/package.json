@@ -12,7 +12,9 @@
     "start:react": "webpack serve --config ./webpack.config.js --mode development",
     "prestorybook": "rnstl",
     "storybook": "start-storybook -p 7007",
-    "build-storybook": "build-storybook"
+    "build:storybook": "build-storybook",
+    "build:storybook:web": "./node_modules/@storybook/react/bin/build.js",
+    "start:storybook:web": "./node_modules/@storybook/react/bin/index.js"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.12.1",
@@ -31,11 +33,15 @@
     "@babel/preset-typescript": "^7.15.0",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
-    "@storybook/addon-actions": "^5.3",
+    "@storybook/addon-actions": "^6.3.7",
+    "@storybook/addon-essentials": "^6.3.7",
     "@storybook/addon-knobs": "^5.3",
-    "@storybook/addon-links": "^5.3",
+    "@storybook/addon-links": "^6.3.7",
     "@storybook/addon-ondevice-actions": "^5.3.23",
     "@storybook/addon-ondevice-knobs": "^5.3.25",
+    "@storybook/builder-webpack5": "^6.3.7",
+    "@storybook/manager-webpack5": "^6.3.7",
+    "@storybook/react": "^6.3.7",
     "@storybook/react-native": "^5.3.25",
     "@storybook/react-native-server": "^5.3.23",
     "@types/jest": "^26.0.23",
