@@ -16,7 +16,9 @@ const palette = {
 const theme = createTheme({
   colors: {
     mainBackground: palette.white,
-    cardPrimaryBackground: palette.purplePrimary,
+    primaryBackground: palette.purplePrimary,
+    secondaryBackground: palette.greenPrimary,
+    tertinaryBackground: palette.purpleDark,
   },
   spacing: {
     s: 8,

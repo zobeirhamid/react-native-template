@@ -13,8 +13,4 @@ interface ReactNativeTextProps
 
 export type TextProps = ReactNativeTextProps & TextThemeProps<Theme>;
 
-const AnimatedText = Animated.createAnimatedComponent(Text);
-
-AnimatedText.displayName = 'Text';
-
-export default AnimatedText;
+export default Animated.createAnimatedComponent(Text);

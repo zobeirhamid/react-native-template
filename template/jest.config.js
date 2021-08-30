@@ -5,10 +5,14 @@ module.exports = {
     '^components/(.*)$': '<rootDir>/src/components/$1',
     '^library/(.*)$': '<rootDir>/src/library/$1',
     '^resources/(.*)$': '<rootDir>/src/resources/$1',
-    'test-utils': '<rootDir>/jest/test-utils.ts',
+    'test-utils': '<rootDir>/jest/test-utils.tsx',
   },
   transformIgnorePatterns: [
-    'node_modules/(?!(react-native' + '|@react-native' + ')/)',
+    'node_modules/(?!(react-native' +
+      '|@react-native' +
+      '|@shopify/restyle' +
+      '|react-native-reanimated' +
+      ')/)',
   ],
   setupFiles: [
     './jest/jest-setup.js',

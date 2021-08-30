@@ -1,23 +1,23 @@
+import Box from 'library/components/Box/Box';
+import Text from 'library/components/Text/Text';
 import React from 'react';
-import {View, Text} from 'react-native';
+import {Theme} from 'resources/themes/theme';
 
 export interface ButtonProps {
   title: string;
   active?: boolean;
+  backgroundColor?: keyof Theme['colors'];
 }
 
-export const Button: React.FC<ButtonProps> = ({title, active}) => {
-  const style = React.useMemo(() => {
-    return {
-      backgroundColor: 'red',
-      opacity: active ? 1 : 0.5,
-    };
-  }, [active]);
-
+export const Button: React.FC<ButtonProps> = ({
+  title,
+  active,
+  backgroundColor = 'primaryBackground',
+}) => {
   return (
-    <View style={style}>
+    <Box backgroundColor={backgroundColor} opacity={active ? 1 : 0.5}>
       <Text>{title}</Text>
-    </View>
+    </Box>
   );
 };
 

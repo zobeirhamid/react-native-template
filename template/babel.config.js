@@ -20,7 +20,7 @@ module.exports = {
           resources: './src/resources',
           library: './src/library',
           components: './src/components',
-          'test-utils': './jest/test-utils.ts',
+          'test-utils': './jest/test-utils.tsx',
         },
       },
     ],

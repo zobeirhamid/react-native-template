@@ -2,6 +2,7 @@ import {Platform} from 'react-native';
 import {getStorybookUI, configure, addDecorator} from '@storybook/react-native';
 import {withKnobs} from '@storybook/addon-knobs';
 import {loadStories} from './storyLoader';
+import withTheme from 'library/higherOrderComponents/withTheme';
 
 import './rn-addons';
 
@@ -20,4 +21,4 @@ const StorybookUIRoot = getStorybookUI({
   asyncStorage: require('@react-native-community/async-storage').default,
 });
 
-export default StorybookUIRoot;
+export default withTheme(StorybookUIRoot);

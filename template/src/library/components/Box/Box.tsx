@@ -13,8 +13,4 @@ interface ReactNativeViewProps
 
 export type BoxProps = ReactNativeViewProps & BoxThemeProps<Theme>;
 
-const AnimatedBox = Animated.createAnimatedComponent(Box);
-
-AnimatedBox.displayName = 'Box';
-
-export default AnimatedBox;
+export default Animated.createAnimatedComponent(Box);
