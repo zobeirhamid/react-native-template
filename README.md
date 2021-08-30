@@ -12,6 +12,7 @@ This is my personal react-native template which includes:
 - React Native Reanimated v2
 - React Native Gesture Handler
 - moti
+- React Native Fast Image
 
 Todo:
 
@@ -19,7 +20,6 @@ Todo:
 - react-navigation-shared-element
 - react-native-modal
 - react-native-navigation
-- moti
 - react-native-bootsplash
 
 ## Resources
