@@ -8,19 +8,12 @@ This is my personal react-native template which includes:
 - React Native Testing Library
 - Detox
 - React Native Vector Icons
-- Shopify: restyle
+- Shopify Restyle
 - React Native Reanimated v2
 - React Native Gesture Handler
 - moti
 - React Native Fast Image
 - React Navigation v6
-
-Todo:
-
-- react-navigation-shared-element
-- react-native-modal
-- react-native-navigation
-- react-native-bootsplash
 
 ## Resources
 
