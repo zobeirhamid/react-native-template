@@ -48,6 +48,8 @@ module.exports = {
     alias: {
       'react-native$': 'react-native-web',
       '@storybook/react-native': '@storybook/react',
+      components: path.resolve(__dirname, 'src/components'),
+      'test-utils': path.resolve(__dirname, 'jest/test-utils.ts'),
     },
   },
 
