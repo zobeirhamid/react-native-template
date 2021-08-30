@@ -9,6 +9,7 @@ This is my personal react-native template which includes:
 - Detox
 - React Native Vector Icons
 - Shopify: restyle
+- React Native Reanimated v2
 
 Todo:
 
@@ -16,7 +17,6 @@ Todo:
 - react-navigation-shared-element
 - react-native-modal
 - react-native-navigation
-- react-native-reanimated
 - moti
 - react-native-gesture-handler
 - react-native-bootsplash
