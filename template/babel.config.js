@@ -20,6 +20,8 @@ module.exports = {
           resources: './src/resources',
           library: './src/library',
           components: './src/components',
+          navigation: './src/navigation',
+          screens: './src/screens',
           'test-utils': './jest/test-utils.tsx',
         },
       },

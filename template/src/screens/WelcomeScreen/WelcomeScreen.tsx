@@ -1,9 +1,7 @@
-import withTheme from 'library/higherOrderComponents/withTheme';
 import React from 'react';
 import {Text, View, TouchableOpacity} from 'react-native';
-import {GestureHandlerRootView} from 'react-native-gesture-handler';
 
-const App = () => {
+const WelcomeScreen: React.FC = () => {
   const [greeting, setGreeting] = React.useState<string | undefined>(undefined);
   if (greeting) {
     return (
@@ -14,7 +12,7 @@ const App = () => {
           justifyContent: 'center',
           alignItems: 'center',
         }}>
-        <Text style={{fontSize: 25}}>{greeting}!!!</Text>
+        <Text style={{fontSize: 25, color: 'white'}}>{greeting}!!!</Text>
       </View>
     );
   }
@@ -31,17 +29,17 @@ const App = () => {
       <TouchableOpacity
         testID="hello_button"
         onPress={() => setGreeting('Hello')}>
-        <Text style={{color: 'blue', marginBottom: 20}}>Say Hello</Text>
+        <Text style={{color: 'white', marginBottom: 20}}>Say Hello</Text>
       </TouchableOpacity>
       <TouchableOpacity
         testID="world_button"
         onPress={() => setGreeting('World')}>
-        <Text style={{color: 'blue', marginBottom: 20}}>Say World</Text>
+        <Text style={{color: 'white', marginBottom: 20}}>Say World</Text>
       </TouchableOpacity>
       <TouchableOpacity
         testID="goodbye_button"
         onPress={() => setGreeting('Goodbye, World')}>
-        <Text style={{color: 'blue', marginTop: 50, marginBottom: 20}}>
+        <Text style={{color: 'white', marginTop: 50, marginBottom: 20}}>
           Say Goodbye
         </Text>
       </TouchableOpacity>
@@ -49,8 +47,4 @@ const App = () => {
   );
 };
 
-export default withTheme(() => (
-  <GestureHandlerRootView>
-    <App />
-  </GestureHandlerRootView>
-));
+export default WelcomeScreen;

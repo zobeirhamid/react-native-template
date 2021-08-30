@@ -43,6 +43,8 @@
       "components/*": ["./components/*"],
       "library/*": ["./library/*"],
       "resources/*": ["./resources/*"],
+      "navigation/*": ["./navigation/*"],
+      "screens/*": ["./screens/*"],
       "test-utils": ["../jest/test-utils.tsx"]
     },
     // "baseUrl": "./",                       /* Base directory to resolve non-absolute module names. */

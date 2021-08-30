@@ -5,6 +5,8 @@ module.exports = {
     '^components/(.*)$': '<rootDir>/src/components/$1',
     '^library/(.*)$': '<rootDir>/src/library/$1',
     '^resources/(.*)$': '<rootDir>/src/resources/$1',
+    '^navigation/(.*)$': '<rootDir>/src/navigation/$1',
+    '^screens/(.*)$': '<rootDir>/src/screens/$1',
     'test-utils': '<rootDir>/jest/test-utils.tsx',
   },
   transformIgnorePatterns: [

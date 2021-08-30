@@ -13,10 +13,10 @@ This is my personal react-native template which includes:
 - React Native Gesture Handler
 - moti
 - React Native Fast Image
+- React Navigation v6
 
 Todo:
 
-- react-navigation
 - react-navigation-shared-element
 - react-native-modal
 - react-native-navigation

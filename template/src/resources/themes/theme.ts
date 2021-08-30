@@ -19,6 +19,7 @@ const theme = createTheme({
     primaryBackground: palette.purplePrimary,
     secondaryBackground: palette.greenPrimary,
     tertinaryBackground: palette.purpleDark,
+    primaryTextColor: palette.white,
   },
   spacing: {
     s: 8,

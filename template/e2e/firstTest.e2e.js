@@ -5,6 +5,7 @@ describe('Example', () => {
 
   beforeEach(async () => {
     await device.reloadReactNative();
+    await element(by.id('navigation_button')).tap();
   });
 
   it('should have welcome screen', async () => {

@@ -59,6 +59,8 @@ module.exports = {
       components: path.resolve(__dirname, 'src/components'),
       resources: path.resolve(__dirname, 'src/resources'),
       library: path.resolve(__dirname, 'src/library'),
+      navigation: path.resolve(__dirname, 'src/navigation'),
+      screens: path.resolve(__dirname, 'src/screens'),
       'test-utils': path.resolve(__dirname, 'jest/test-utils.tsx'),
     },
   },
