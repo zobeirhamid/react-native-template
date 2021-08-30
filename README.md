@@ -11,6 +11,7 @@ This is my personal react-native template which includes:
 - Shopify: restyle
 - React Native Reanimated v2
 - React Native Gesture Handler
+- moti
 
 Todo:
 
