@@ -18,7 +18,8 @@ module.exports = {
     rules: [
       {
         test: /\.(tsx|ts|jsx|js|mjs)$/,
-        exclude: /node_modules\/(?!()\/).*/,
+        exclude:
+          /node_modules\/(?!(react-native-reanimated|react-native-gesture-handler|moti|@motify|react-native-animatable|react-native-modal|react-native-vector-icons|react-native-keyboard-spacer|react-navigation-shared-element)\/).*/,
         use: {
           loader: 'babel-loader',
           options: {
@@ -40,6 +41,14 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif|mp4)$/i,
         type: 'asset/resource',
+      },
+      {
+        test: /\.ttf$/,
+        loader: 'url-loader', // or directly file-loader
+        include: path.resolve(
+          __dirname,
+          'node_modules/react-native-vector-icons',
+        ),
       },
     ],
   },
