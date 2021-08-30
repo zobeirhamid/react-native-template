@@ -58,6 +58,8 @@ module.exports = {
       'react-native$': 'react-native-web',
       '@storybook/react-native': '@storybook/react',
       components: path.resolve(__dirname, 'src/components'),
+      resources: path.resolve(__dirname, 'src/resources'),
+      library: path.resolve(__dirname, 'src/library'),
       'test-utils': path.resolve(__dirname, 'jest/test-utils.ts'),
     },
   },

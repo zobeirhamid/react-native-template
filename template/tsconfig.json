@@ -41,6 +41,8 @@
     "baseUrl": "./src",
     "paths": {
       "components/*": ["./components/*"],
+      "library/*": ["./library/*"],
+      "resources/*": ["./resources/*"],
       "test-utils": ["../jest/test-utils.ts"]
     },
     // "baseUrl": "./",                       /* Base directory to resolve non-absolute module names. */

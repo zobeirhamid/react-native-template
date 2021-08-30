@@ -3,6 +3,8 @@ module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   moduleNameMapper: {
     '^components/(.*)$': '<rootDir>/src/components/$1',
+    '^library/(.*)$': '<rootDir>/src/library/$1',
+    '^resources/(.*)$': '<rootDir>/src/resources/$1',
     'test-utils': '<rootDir>/jest/test-utils.ts',
   },
   transformIgnorePatterns: [
