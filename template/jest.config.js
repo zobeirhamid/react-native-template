@@ -10,6 +10,9 @@ module.exports = {
   transformIgnorePatterns: [
     'node_modules/(?!(react-native' + '|@react-native' + ')/)',
   ],
-  setupFiles: ['./jest/jest-setup.js'],
+  setupFiles: [
+    './jest/jest-setup.js',
+    './node_modules/react-native-gesture-handler/jestSetup.js',
+  ],
   setupFilesAfterEnv: ['@testing-library/jest-native/extend-expect'],
 };

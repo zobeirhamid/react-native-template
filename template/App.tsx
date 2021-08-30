@@ -1,8 +1,10 @@
+import withTheme from 'library/higherOrderComponents/withTheme';
 import React from 'react';
 import {Text, View, TouchableOpacity} from 'react-native';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 
 const App = () => {
-  const [greeting, setGreeting] = React.useState<string>(undefined);
+  const [greeting, setGreeting] = React.useState<string | undefined>(undefined);
   if (greeting) {
     return (
       <View
@@ -47,4 +49,8 @@ const App = () => {
   );
 };
 
-export default App;
+export default withTheme(() => (
+  <GestureHandlerRootView>
+    <App />
+  </GestureHandlerRootView>
+));
